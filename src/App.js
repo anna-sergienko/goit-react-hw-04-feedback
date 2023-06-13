@@ -26,15 +26,15 @@ export const  App = () => {
     switch (option) {
 
       case 'good':
-        setGood(good + 1)
+        setGood(prev => prev + 1)
         break
 
       case 'neutral':
-        setNeutral(neutral + 1)
+        setNeutral(prev => prev + 1)
         break
 
       case 'bad':
-        setBad(bad + 1)
+        setBad(prev => prev + 1)
         break
 
       default:
